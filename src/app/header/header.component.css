@@ -1,9 +1,19 @@
+<<<<<<< HEAD
 .cv {
+=======
+.box {
+>>>>>>> origin/develop
   height: 100%;
   width: 100%;
   align-content: center;
   justify-items: center;
+<<<<<<< HEAD
 
+=======
+}
+
+.HeaderCV {
+>>>>>>> origin/develop
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -12,6 +22,7 @@
 }
 
 .Header {
+<<<<<<< HEAD
   width: 100%;
   height: 100%;
   margin: 0;
@@ -33,10 +44,17 @@
   width: 100%;
   height: 2px; /* Altura de la línea */
   background-color: #63c5da; /* Color de la línea */
+=======
+  width: 40%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+>>>>>>> origin/develop
 }
 
 .infPersonal {
   height: 10rem;
+<<<<<<< HEAD
   width: 10 rem;
   margin-left: 0;
   padding: 0;
@@ -76,20 +94,45 @@
   max-width: 450px;
   margin: 0;
   margin-top: 25px;
+=======
+  width: 10rem;
+  margin: 0;
+  padding: 0;
+}
+
+.name {
+  font-size: 25px;
+  width: 15rem;
+  margin: 0;
+}
+
+.mision {
+  font-size: 20px;
+  margin: 0;
+>>>>>>> origin/develop
   padding: 0;
 }
 
 .imgPersonal {
   padding: 0;
+<<<<<<< HEAD
   width: 20rem;
   height: 15rem;
   margin: 0 2rem;
   border-radius: 7rem;
   border: 2px solid #63c5da;
+=======
+  width: 10rem;
+  height: 15rem;
+  margin: 0 2rem;
+  border-radius: 7rem;
+  border-color: black;
+>>>>>>> origin/develop
   border-style: groove;
 }
 
 .Contacto {
+<<<<<<< HEAD
   width: 25rem;
   display: flex;
   flex-direction: column;
@@ -111,4 +154,21 @@
   height: 1em;
   margin-left: 5px; /* Agrega un espacio a la izquierda de los iconos */
   vertical-align: middle; /* Centra verticalmente los iconos */
+=======
+  display: flex;
+  flex-direction: column;
+
+  justify-content: left;
+  justify-items: left;
+  margin: 0 0 0 2;
+}
+
+.p {
+  padding: 1px 2px;
+  margin: 6px 0;
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  color: dimgrey;
+>>>>>>> origin/develop
 }
