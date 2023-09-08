@@ -1,11 +1,8 @@
-.box {
+.cv {
   height: 100%;
   width: 100%;
   align-content: center;
   justify-items: center;
-}
-
-.HeaderCV {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -14,55 +11,103 @@
 }
 
 .Header {
-  width: 40%;
+  width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.Header::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px; /* Altura de la línea */
+  background-color: #63c5da; /* Color de la línea */
 }
 
 .infPersonal {
   height: 10rem;
-  width: 10rem;
-  margin: 0;
+  width: 10 rem;
+  margin-left: 0;
   padding: 0;
 }
 
+.inf_Personal::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -45px; /* Ajusta el valor según lo largo que desees que sea el recuadro */
+  top: 10%;
+  height: 20%; /* El recuadro será de la misma altura que el contenido */
+  width: 30px; /* Ajusta el ancho del recuadro */
+  background-color: black; /* Cambia el color del recuadro a negro */
+}
+
 .name {
-  font-size: 25px;
-  width: 15rem;
+  font-size: 30px;
+  width: 30rem;
   margin: 0;
+  margin-bottom: 0%;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.titulos {
+  margin: 0;
+  margin-top: 0%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  color: #63c5da;
 }
 
 .mision {
-  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  text-align: justify;
+  max-width: 450px;
   margin: 0;
+  margin-top: 25px;
   padding: 0;
 }
 
 .imgPersonal {
   padding: 0;
-  width: 10rem;
+  width: 20rem;
   height: 15rem;
   margin: 0 2rem;
   border-radius: 7rem;
-  border-color: black;
+  border: 2px solid #63c5da;
   border-style: groove;
 }
 
 .Contacto {
+  width: 25rem;
   display: flex;
   flex-direction: column;
-
   justify-content: left;
   justify-items: left;
-  margin: 0 0 0 2;
+  margin-top: -20%;
+
+  gap: 10px;
 }
 
-.p {
-  padding: 1px 2px;
-  margin: 6px 0;
-  font-size: 15px;
-  font-family: "Times New Roman", Times, serif;
-  font-weight: 600;
-  color: dimgrey;
+.Contacto p {
+  margin: 3px 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  text-align: right;
+}
+
+.Contacto .icon {
+  height: 1em;
+  margin-left: 5px; /* Agrega un espacio a la izquierda de los iconos */
+  vertical-align: middle; /* Centra verticalmente los iconos */
 }
