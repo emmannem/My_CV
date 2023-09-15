@@ -1,1 +1,40 @@
-<p>work-experience is work</p>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans:wght@400;500&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <div class="work">
+    <h2>WORK EXPERIENCE</h2>
+
+    <div class="experience">
+      <div *ngFor="let work of workInfo">
+        <div class="info">
+          <div class="left">
+            <h3>{{ work.puesto }}</h3>
+            <h4>{{ work.empresa }}</h4>
+            <p>{{ work.fecha_ini }} - {{ work.fecha_fin }}</p>
+          </div>
+          <div class="right">
+            <p>{{ work.ciudad }}, {{ work.pais }}</p>
+          </div>
+        </div>
+
+        <div class="logros">
+          <p class="titulo">Logros</p>
+          <ul>
+            <li *ngFor="let logro of work.logros">
+              <p class="lista">{{ logro.logro }}</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</html>
