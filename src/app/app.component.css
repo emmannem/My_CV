@@ -27,7 +27,8 @@
   margin-bottom: 20px; /* Espacio entre el encabezado y el contenido */
 }
 
-.work-experience {
+.work-experience,
+.skills {
   flex: 1;
   margin: 0 10px; /* Espacio entre los componentes */
   /* Puedes ajustar el margen según tus necesidades */

@@ -1,0 +1,26 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Open+Sans:wght@400;500&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="skils">
+    <header class="titulos">
+      <h2>SKILS & COMPETENCIES</h2>
+    </header>
+
+    <main class="habilidades">
+      <ul *ngFor="let habilidad of habilidades">
+        <li class="competencias">
+          <p>{{ habilidad.skil }}</p>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
