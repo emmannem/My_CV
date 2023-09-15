@@ -17,8 +17,9 @@
   flex-direction: column;
   align-items: center;
   justify-items: center;
+}
 
-  border-radius: 10px;
-  border-color: black;
-  border-style: groove;
+.skills-cell {
+  text-align: left; /* Alinea el contenido a la izquierda dentro de la celda */
+  padding-left: 50px; /* Agrega un relleno a la izquierda para mover el contenido hacia la izquierda */
 }

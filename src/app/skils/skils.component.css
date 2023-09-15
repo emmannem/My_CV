@@ -1,0 +1,13 @@
+.habilidades ul {
+  list-style: none; /* Elimina los puntos de la lista */
+  padding: 0; /* Elimina el espacio interno de la lista (margen) */
+}
+
+h2 {
+  font-size: 25px;
+  width: 30rem;
+  margin: 0;
+  margin-bottom: 1.5%;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+}
