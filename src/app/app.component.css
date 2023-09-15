@@ -1,25 +1,35 @@
+/* CSS */
 .main {
   width: 100%;
   height: 50%;
   margin: 3% 0% 0 0%;
   position: relative;
-
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .contenido {
-  position: relative;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-items: center;
+  justify-content: center;
 }
 
-.skills-cell {
-  text-align: left; /* Alinea el contenido a la izquierda dentro de la celda */
-  padding-left: 50px; /* Agrega un relleno a la izquierda para mover el contenido hacia la izquierda */
+.header,
+.content {
+  width: 100%;
+  max-width: 1000px; /* Ancho máximo para el contenido */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Espacio entre el encabezado y el contenido */
+}
+
+.work-experience,
+.skills {
+  flex: 1;
+  margin: 0 10px; /* Espacio entre los componentes */
+  /* Puedes ajustar el margen según tus necesidades */
 }
